@@ -1,0 +1,82 @@
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .container .news-data {
+    min-height: auto;
+  }
+
+  .container.media-content {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .img-fluid .news-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Make h5 and p responsive */
+  .h5 {
+    font-size: 1.5rem; /* Increase font size */
+  }
+
+  .my-1 {
+    font-size: 1rem; /* Increase font size */
+  }
+}
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media (max-width: 576px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .responsive {
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    display:contents;
+    
+
+    
+  }
+  
+
+  .container .news-data {
+    min-height: auto;
+  }
+
+  .media-content {
+    width: 350px;
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 0;
+    margin-right: 30px;
+  }
+
+  .img-fluid .news-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .news-img {
+    width: 350px;
+    object-fit: contain;
+  }
+
+
+  .h5 {
+    font-size: 1.3rem;
+    white-space: normal; 
+    margin: 300px;
+  }
+
+  .my-1 {
+    font-size: 1rem;
+  }
+}
