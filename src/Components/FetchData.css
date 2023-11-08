@@ -1,3 +1,74 @@
+.no-underline {
+  text-decoration: none;
+}
+.more-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+}
+
+.more-btn {
+  --primary-color: #111;
+  --hovered-color: #c84747;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.more-btn p {
+  margin: 0;
+  position: relative;
+  font-size: 10px;
+  color: var(--primary-color)
+}
+
+.more-btn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.more-btn p::before {
+  position: absolute;
+/*   box-sizing: border-box; */
+  content: "Subscribe";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.more-btn:hover::after {
+  width: 100%;
+}
+
+.more-btn:hover p::before {
+  width: 100%;
+}
+
+.more-btn:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color)
+}
+
+.more-btn svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   .container {
@@ -29,9 +100,7 @@
     font-size: 1rem; /* Increase font size */
   }
 }
-.no-underline {
-  text-decoration: none;
-}
+
 
 /* Media query for screens smaller than 576px (e.g., smartphones) */
 @media (max-width: 576px) {
