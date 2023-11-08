@@ -57,7 +57,7 @@ const FetchData = ({ cat }) => {
                         href={items.url}
                         target="blank"
                       >
-                        view more
+                        Read more
                       </a>
                       <svg
                         stroke-width="4"
