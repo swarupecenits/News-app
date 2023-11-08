@@ -1,3 +1,12 @@
+.custom-background {
+  background: linear-gradient(to right, #001b35, #016bb7,#001b35);
+
+}
+.cont-bg{
+  background-color: #F2F2F2;
+}
+
+
 .no-underline {
   text-decoration: none;
 }
@@ -71,22 +80,25 @@
 
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
-  .container {
-    margin-top: 20px;
+  .contain {
+    color: rgb(0, 0, 0);
   }
 
-  .container .news-data {
-    min-height: auto;
+  .responsive {
+    width: 100% !important;
+    overflow: hidden ;
+    display: flex ; 
+    flex-direction: column ;
+    border: 1px solid #F2F2F2; 
+    border-radius: 10px;
+    padding: 15px ; 
   }
+  
 
-  .container.media-content {
-    width: 100%;
+  .news-img {
     padding: 10px;
-    box-shadow: none;
-    border-radius: 0;
-  }
-
-  .img-fluid .news-img {
+    padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
     height: auto;
   }
@@ -101,50 +113,41 @@
   }
 }
 
-
 /* Media query for screens smaller than 576px (e.g., smartphones) */
 @media (max-width: 576px) {
-  .container {
+  .contain {
     margin-top: 20px;
+    color: rgb(0, 0, 0);
   }
 
   .responsive {
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    display:contents;
-    
-
-    
-  }
-  
-
-  .container .news-data {
-    min-height: auto;
-  }
-
-  .media-content {
-    width: 350px;
-    padding: 10px;
-    box-shadow: none;
-    border-radius: 0;
-    margin-right: 30px;
-  }
-
-  .img-fluid .news-img {
-    width: 100%;
-    height: auto;
+    width: 100% ;
+    overflow: hidden ;
+    display: flex ; 
+    flex-direction: column ;
+    border: 1px solid #646464; 
+    border-radius: 10px;
+    padding: 15px; 
   }
 
   .news-img {
     width: 350px;
     object-fit: contain;
-  }
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
 
+  }
+  .more-btn {
+    font-size: large;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+  }
 
   .h5 {
     font-size: 1.3rem;
-    white-space: normal; 
+    white-space: normal;
     margin: 300px;
   }
 
