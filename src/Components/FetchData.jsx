@@ -7,8 +7,8 @@ const FetchData = ({cat}) => {
   const fetchData = async () => {
     await axios
       .get(
-        cat?`https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=d57189ee8748490e917bb21c2e76edf2`:
-        "https://newsapi.org/v2/top-headlines?country=in&apiKey=d57189ee8748490e917bb21c2e76edf2"
+        cat?`https://saurav.tech/NewsAPI/top-headlines/category/${cat}/in.json`:
+        "https://saurav.tech/NewsAPI/top-headlines/category/general/in.json"
       )
       .then((res) => setData(res.data.articles));
   };
