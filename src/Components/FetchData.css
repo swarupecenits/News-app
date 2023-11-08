@@ -89,8 +89,6 @@
     overflow: hidden ;
     display: flex ; 
     flex-direction: column ;
-    border: 1px solid #F2F2F2; 
-    border-radius: 10px;
     padding: 15px ; 
   }
   
@@ -125,8 +123,6 @@
     overflow: hidden ;
     display: flex ; 
     flex-direction: column ;
-    border: 1px solid #646464; 
-    border-radius: 10px;
     padding: 15px; 
   }
 
