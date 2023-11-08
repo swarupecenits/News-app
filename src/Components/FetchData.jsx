@@ -39,7 +39,7 @@ const FetchData = ({cat}) => {
                   <p className="my-1">{items.description}</p>
                   <p className="my-1">{items.content}</p>
 
-                  <button>
+                  <button className="more-btn">
                     <a
                       class="text-decoration-none  text-reset"
                       href={items.url}
