@@ -19,7 +19,7 @@ const FetchData = ({cat}) => {
   return (
     <div className="container responsive my-4">
       <h3>
-        <ul className="headings">TOP HEADLINES</ul>
+        <ul className="headings text-center no-underline">TOP HEADLINES</ul>
       </h3>
       <div className="container  news-data my-3 " style={{minHeight:"100vh"}}>
         {Data
